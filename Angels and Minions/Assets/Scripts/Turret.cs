@@ -13,7 +13,6 @@ public class Turret : MonoBehaviour {
 
 
 	void OnTriggerEnter2D(Collider2D other){
-		Debug.Log(other);
 		if(other.gameObject.tag == "Minion" && target == null){
 			target = other.gameObject;
 			MC = other.gameObject.GetComponent<MinionController>();

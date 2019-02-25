@@ -27,7 +27,7 @@ public class AngelController : MonoBehaviour {
 			currentWaypoint++;
 			//Debug.Log(currentWaypoint);
 			if(currentWaypoint >= waypoints.Length){
-				currentWaypoint = 0;
+				Destroy(this.gameObject);
 			}
 		}
 		transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, Time.deltaTime * speed);

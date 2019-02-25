@@ -26,10 +26,8 @@ public class MinionController : MonoBehaviour {
 		if(Vector2.Distance(waypoints[currentWaypoint].transform.position, transform.position) < WPRadius){
 			currentWaypoint++;
 			//Debug.Log(currentWaypoint);
-			if(currentWaypoint >= waypoints.Length){
-				currentWaypoint = 0;
-			}
 		}
+		
 		transform.position = Vector3.MoveTowards(transform.position, waypoints[currentWaypoint].transform.position, Time.deltaTime * speed);
 	}
 

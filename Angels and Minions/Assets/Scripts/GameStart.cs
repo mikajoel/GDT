@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameStart : MonoBehaviour {
 
-	public float startTimer = 3f; //Amount of time the player's have to place defences
+	public float startTimer = 60f; //Amount of time the player's have to place defences
 	public int wave; //What wave the player's have got to
 	public int amountOfSpawns;
 	public GameObject angel, minion; //The minion/angel prefabs
@@ -27,6 +27,11 @@ public class GameStart : MonoBehaviour {
 			started = true;
 			wave++;
 			StartCoroutine(SpawnWave());
+		}
+		//If wave is complete:
+		if(GameObject.FindGameObjectsWithTag("Angel").Length == 0 && GameObject.FindGameObjectsWithTag("Minion").Length == 0 && started == true){
+			startTimer = 60;
+			started = false;
 		}
 	}
 	

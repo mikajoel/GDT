@@ -54,6 +54,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\AngelController.cs" />
+     <Compile Include="Assets\Scripts\AutoDelete.cs" />
+     <Compile Include="Assets\Scripts\Castle_1.cs" />
+     <Compile Include="Assets\Scripts\Castle_2.cs" />
      <Compile Include="Assets\Scripts\Cursor.cs" />
      <Compile Include="Assets\Scripts\GameStart.cs" />
      <Compile Include="Assets\Scripts\Inventory.cs" />

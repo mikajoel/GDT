@@ -12,8 +12,8 @@ public class Cursor : MonoBehaviour {
 
 	void Start () {
 		//Place the cursors at starting position
-		_cursor1.transform.position = new Vector3(0.5f, 0.5f, 0f);
-		_cursor2.transform.position = new Vector3(0.5f, -0.5f, 0f);
+		_cursor1.transform.position = new Vector3(0.5f, 0f, 0f);
+		_cursor2.transform.position = new Vector3(0.5f, -1f, 0f);
 		//Set grid value == their position
 		gridPosV1 = 0.5f;
 		gridPosH1 = 0.5f;
